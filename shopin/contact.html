@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shop'in</title>
+	<link rel="shortcut icon" href="images/ico/icone.png">
+	<link rel="apple-touch-icon" href="images/ico/icone.png" />
+    <link href='css/font-google.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="jquery.mobile.custom/jquery.mobile.custom.structure.css">
+	<link rel="stylesheet" href="jquery.mobile.custom/jquery.mobile.custom.theme.css">
+
+	<!-- Modules styles -->
+	<link rel="stylesheet" href="js/owlCarousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="js/owlCarousel/owl-carousel/owl.theme.css">
+	<link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media-queries.css">
+
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
+	<script src="js/owlCarousel/owl-carousel/owl.carousel.js"></script>
+	<script src="js/prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="src/modules/category/js/category.js" type="text/javascript" charset="utf-8"></script>
+<script src="src/modules/utils/js/utils.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	function init(){
+		displayBoutiquesCategories();
+		displayMenuConnected();
+	}
+</script>
+
+</head>
+<body onload="init()">
+
+		<section class="contact" id="contact" data-url="index" data-role="page">
+
+			<div id="left-column" data-role="header">
+				<div id="top_left">
+					<div class="headerInt">
+						<a href="#" onclick="history.go(-1);" class="boutonRetour"></a>
+						<h1 class="titrePage">Contact</h1>
+						<span class="glyphicon glyphicon-search visible-xs-block loupeMobile"></span>
+						<form class="navbar-form navbar-search" role="search">
+				        	<div class="form-group">
+				        		<div class="input-group">
+						      		<input id="input-search" type="text" class="form-control" placeholder="Search" />
+						      		<span class="input-group-btn">
+						        		<button id="button-search" class="btn" type="button"><span class="glyphicon glyphicon-search"></span></button>
+						      		</span>
+						    	</div><!-- /input-group -->
+						   </div>
+				      	</form>
+				    </div>
+				</div>
+
+				<div data-role="collapsible" data-collapsed-icon="fleche-bas" data-expanded-icon="fleche-haut" data-iconpos="right" class="navBoutiquesContainer">
+					<h4 class="titreMobile">Vos boutiques</h4>
+					<div class="navBoutiques">	
+						<ul class="nav navbar-nav" id="boutiquesCategories">
+							<!--<li>
+								<a href="#" id="pictoCafe">Chemins gourmets</a>
+								<ul>
+									<li><a href="#">Alimentation générale</a></li>
+									<li><a href="#">Alimentation bio</a></li>
+									<li><a href="#">Boucherie / Traiteur</a></li>
+									<li><a href="#">Boulangerie / Pâtisserie</a></li>
+									<li><a href="#">Chocolatier / Confiseur</a></li>
+									<li><a href="#">Epicerie, terroir et pâtes</a></li>
+									<li><a href="#">Fromagerie</a></li>
+									<li><a href="#">Marché provençal</a></li>
+									<li><a href="#">Poissonnerie</a></li>
+									<li><a href="#">Vins &amp; spiritueux</a></li>
+									<li><a href="#">Supermarchés</a></li>
+								</ul>
+							</li>
+							<li><a href="#" id="pictoResto">Restaurants &amp; Cafes</a>
+								<ul>
+									<li><a href="#">Alimentation générale</a></li>
+									<li><a href="#">Alimentation bio</a></li>
+									<li><a href="#">Boucherie / Traiteur</a></li>
+									<li><a href="#">Boulangerie / Pâtisserie</a></li>
+									<li><a href="#">Chocolatier / Confiseur</a></li>
+									<li><a href="#">Epicerie, terroir et pâtes</a></li>
+									<li><a href="#">Fromagerie</a></li>
+									<li><a href="#">Marché provençal</a></li>
+									<li><a href="#">Poissonnerie</a></li>
+									<li><a href="#">Vins &amp; spiritueux</a></li>
+									<li><a href="#">Supermarchés</a></li>
+								</ul>
+							</li>
+							<li><a href="#" id="pictoHotel">Hotel</a></li>
+							<li><a href="#" id="pictoMaison">Art de la maison</a></li>
+							<li><a href="#" id="pictoChaussure">Mode &amp; Accessoires</a></li>
+							<li><a href="#" id="pictoLivre">Culture &amp; Loisirs</a></li>
+							<li><a href="#" id="pictoCoiffeur">Bien etre &amp; beaute</a></li>
+							<li><a href="#" id="pictoBateau">Auto &amp; Nautique</a></li>
+							<li><a href="#" id="pictoServices">Services</a></li>-->
+						</ul>
+					</div>
+				</div>
+
+			</div>	
+
+			<div class="navbar" id="sidr" data-role="panel" role="navigation">
+				<p class="sectionName">Mon profil</p>
+				<ul class="nav monProfil-details">
+					<li id="menu-profil"><a href="#" onclick="window.location.href='account.html'" class="menu-profil"><div id="userNames"></div><span>déconnexion</span></a></li>
+					<li id="menu-connexion"><a href="#" onclick="window.location.href='connexion.html'" class="menu-connexion">Se connecter<span>créer un compte</span></a></li>
+					<li id="menu-editer"><a href="#" onclick="window.location.href='editer-profil.html'" class="menu-maj">Editer</a></li>
+					<li id="menu-boutiques"><a href="#" onclick="window.location.href='shop.html'" class="menu-magasins">Mes boutiques</a></li>
+					<li id="menu-news"><a href="#" onclick="window.location.href='liste-news.html'" class="menu-news">Mes news</a></li>
+					<li id="menu-bonsPlans"><a href="#" onclick="window.location.href='mes-bons-plans.html'" class="menu-bonsplans">Mes bons plans</a></li>
+					<li id="menu-parcours"><a href="#" onclick="window.location.href='parcours.html'" class="menu-parcours">Mes parcours</a></li>
+				</ul>
+				<p class="sectionName">Services</p>
+				<ul class="nav servicesDetails">
+					<li id="menu-accueil"><a href="#" onclick="window.location.href='index.html'" class="menu-accueil">Accueil</a></li>
+					<li id="menu-contact"><a href="#" onclick="window.location.href='contact.html'" class="menu-contact">Contact</a></li>
+				</ul>
+			</div>
+
+			<div data-role="content">
+				<div class="main">
+					<img src="images/contact-antibes.jpg" alt="Antibes Juan les Pins" />
+
+					<div class="row">
+						<form>							
+							<div class="col-sm-12">
+								<input type="text" placeholder="Nom, prénom" name="Nom Prenom" class="form-control"/>
+								<input type="email" placeholder="Email" name="mail" class="form-control" />
+								<input type="text" placeholder="Objet" name="Objet" class="form-control hidden-xs" />
+								<textarea class="form-control" name="message" placeholder="Message"></textarea>
+								
+								<button type="submit">envoyer</button>
+							</div>						
+						</form>
+					</div>
+
+					<div class="clearfix">
+						<p class="light">Nous contacter, par mail : <br/>
+							<a href="mailto:info@antibes-juanlespins-commerces.com">info@antibes-juanlespins-commerces.com</a><br/><br/>
+							ou par courrier :<br/>
+							<span class="adresse">Association Antibes Demain,<br/>17, Boulevard Albert 1er,<br/>06600 Antibes, France</span>.
+						</p>
+					</div>
+				</div>
+
+			</div><!-- div data role content -->
+
+			<footer data-role="footer" data-theme="b" data-id="foo1">		
+				<div class="pictoFooter">
+					<a href="#" class="facebook"></a> <a href="#" class="twitter"></a>
+				</div>
+				<p><a href="#" onclick="window.location.href='partenaires.html'">Partenaires</a> | <a href="#">Mentions légales</a> | <a href="#">Qui sommes-nous ?</a><br/>
+				<a href="#" onclick="window.location.href='contact.html'">Téléphone</a> | <a href="#" onclick="window.location.href='contact.html'">Adresse</a> | <a href="#" onclick="window.location.href='search-results.html'">Recherches avancées</a></p>
+			</footer><!-- /footer -->
+
+			<!-- Custom js -->
+			<script src="js/custom.js"></script>
+
+		</section>
+		
+</body>
+</html>
