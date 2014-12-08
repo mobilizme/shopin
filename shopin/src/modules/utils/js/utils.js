@@ -9,7 +9,6 @@ function displayMenuConnected(){
 	if(localStorage.getItem("connected") != "true"){
 		document.getElementById('menu-profil').style.display = "none";
 		document.getElementById('menu-editer').style.display = "none";
-		document.getElementById('menu-accueil').style.display = "none";
 	}else{			
 		document.getElementById('userNames').innerHTML = localStorage.getItem("userfirstname")+" "+localStorage.getItem("userlastname");
 		document.getElementById('menu-connexion').style.display = "none";
